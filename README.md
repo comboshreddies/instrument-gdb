@@ -1,3 +1,6 @@
+# A tool for instrumenting gdb execution for automated, selective and low overhead observation of debugged program #
+
+
 Gdb support python scripting, so here is simple example to instrument gdb for purpose that matched my needs 
 example below were run on both arm64 and amd64 linux
 
@@ -37,17 +40,18 @@ Ie I can't response with continue in console that fast that I would like to, yet
 Process is being observed in light way till it matches some predefined state (in this example till app it writes 'aaa 70').
 After that point process is being intensively observed till it matches next state (in this example till app writes 'aaa 90')
 
-
-compile test with
+## compile test app 
+compile gdb_test app with
 ``` console
 gcc -o gdb_test gdb_test.c -g
-```
+```  
 
 or just 
 ``` console
 make
 ```
 
+## run 
 run gdb observe with
 ``` console
 gdb -x gdb_observe_test.py
