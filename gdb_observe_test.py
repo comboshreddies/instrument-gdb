@@ -39,7 +39,7 @@ def detect_target_arch():
     return("")
 
 
-myexefile="./gdb_test"
+myexefile = "./gdb_test"
 print("### preparing to run: " + myexefile)
 
 gdb.execute("file " + myexefile)
