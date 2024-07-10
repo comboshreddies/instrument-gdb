@@ -8,7 +8,7 @@ I wanted to observe some part of execution, but not whole execution. Initially I
 I've decided that I will observe system call write (debuging with printf), and use gdb python to check syscall arguments.
 (one can choose to start observing on any other breakpoint if source and symbols are available)
 
-Example program gdb_test program will dive recursively up to depth of 120, increasing depth one by one, then it will exit/return.
+Example gdb_test program for gdb observation will dive recursively up to depth of 120, increasing depth one by one, then it will exit/return.
 On each depth that is dividable by 10 it will print 'aaa <depth>'.
 
 The output of gdb_test program is
