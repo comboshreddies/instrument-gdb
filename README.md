@@ -2,9 +2,9 @@
 
 
 Gdb supports python scripting, so here is simple example to instrument gdb with pythoh for purpose that matched my needs.
-Example below were run on both arm64 and amd64 linux.
+Example below was tested on both arm64 and amd64 linux.
 
-I wanted to observe some part of execution, but not whole execution. Initially I did not have symbols or source code.
+I wanted to observe some part of execution, but not whole execution. Initially I did not have debug symbols or source code.
 I've decided that I will observe system call write (debuging with printf), and use gdb python to check syscall arguments.
 (one can choose to start observing on any other breakpoint if source and symbols are available)
 
