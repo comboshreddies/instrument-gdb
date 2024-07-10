@@ -31,10 +31,12 @@ aaa 120
 
 I wanted to observe all steps, all backtraces from the moment application wrote 'aaa 70' to
 moment application writes 'aaa 90', and after that I do not interfere with execution.
-With provided output, depending on available, symbols one can reconstruct execution trace of
-function calls, or inspect registers or locals on every step, or set more specific breakpoints.
+With provided output, depending on available debug symbols, one can reconstruct execution trace of
+function calls, inspect registers or locals on every step, or set more specific breakpoints.
 
-Idea behind was to observe execution of some gdb observed program with minimall overhead, and no user inputs.
+Use this as an example and a template for further drill down.
+
+Idea behind was to instrument execution of some gdb observed program with minimall overhead, and no user inputs.
 Ie I can't response with continue in console that fast that I would like to, yet python gdb extension can.
 
 Process is being observed in light way till it matches some predefined state (in this example till app it writes 'aaa 70').
