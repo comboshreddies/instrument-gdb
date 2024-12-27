@@ -9,7 +9,6 @@ int dive(int a) {
 }
 
 int main() {
-  int i;
   dive(0);
   return 0;
 }
